@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.5));
+    color: white;
+    padding: 15px 0;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav.scrolled {
+    background: rgba(0, 123, 255, 0.9);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Change font color on hover */
+    background-color: rgba(255, 204, 0, 0.3); /* Add background on hover */
+}
+
+.content {
+    padding-top: 70px; /* Space for fixed navbar */
+}
+
+section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+#home {
+    background: linear-gradient(135deg, #f4f4f4, #e2e2e2);
+}
+
+#about {
+    background: linear-gradient(135deg, #e2e2e2, #d0d0d0);
+}
+
+#services {
+    background: linear-gradient(135deg, #d0d0d0, #b8b8b8);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.2em;
+    max-width: 600px;
+    line-height: 1.5;
+}
